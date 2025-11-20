@@ -25,10 +25,6 @@ class Basket(
     fun total(): Price = items.values.fold(Price(0)) { sum, position -> sum + position.calculatePrice(discountRepository) }
 
     override fun toString(): String {
-        return """
-            Basket for user $userId:
-            ${items.values.fold("") { item, sum -> "$item\n$sum" }}
-            
-        """.trimIndent()
+        return "Basket for user $userId${items.values.fold("") { item, sum -> "$item\n$sum" }}\n"
     }
 }

@@ -18,8 +18,9 @@ fun main() {
     user0Basket.scan("A0001")
 
     // output contents and total
-    println("Basket Contents for Task 0: $user0Basket")
-    println("Total: ${user0Basket.total()}")
+    println("### TASK 0 OUTPUT ###")
+    println(user0Basket)
+    println("Total: ${user0Basket.total()}\n")
 
     /* Task 1 */
     // set discount
@@ -30,8 +31,9 @@ fun main() {
     user1Basket.scan("A0002")
 
     // output contents and total
-    println("Basket Contents for Task 1: $user1Basket")
-    println("Total: ${user1Basket.total()}")
+    println("### TASK 1 OUTPUT ###")
+    println(user1Basket)
+    println("Total: ${user1Basket.total()}\n")
 
     /* Task 2 */
     // reset previous discount
@@ -47,6 +49,7 @@ fun main() {
     user2Basket.scan("A0002")
 
     // output contents and total
-    println("Basket Contents for Task 2: $user2Basket")
-    println("Total: ${user2Basket.total()}")
+    println("### TASK 2 OUTPUT ###")
+    println(user2Basket)
+    println("Total: ${user2Basket.total()}\n")
 }
