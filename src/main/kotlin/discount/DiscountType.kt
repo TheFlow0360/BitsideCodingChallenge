@@ -18,7 +18,7 @@ enum class DiscountType {
     },
     TEN_PERCENT_OFF {
         override fun calculateDiscount(price: Price, amount: UInt): Price {
-            val discountRate = BigDecimal.valueOf(0.1);
+            val discountRate = BigDecimal.valueOf(0.1)
             val totalPrice = price * BigDecimal.valueOf(amount.toLong())
             // round to even cent values, using the usual "commercial rounding"
             return (totalPrice * discountRate).setScale(2, RoundingMode.HALF_UP)
