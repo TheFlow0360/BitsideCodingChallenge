@@ -7,6 +7,17 @@ In general this project is set up in a way that would easily allow it to be "upg
 e.g. a spring boot or ktor REST service.
 It is also built with Dependency Injection in mind, though no framework is currently used for this.
 
+## Running the application
+
+The required operations are implemented in the `Main.kt`, the default entrypoint for the application.
+Provided the JDK (Java 24) is installed and properly set up, you just need one command to run the application:
+
+```sh
+./gradlew run 
+```
+
+This will output the operation results for the tasks defined below.
+
 # Original Instructions
 
 _see https://gist.githubusercontent.com/N3mezis/e058340930a385d4d4aac513cd0f1c1a/raw/d10ec2688704aaeb2b47ba04a94f3ee9b052b2fa/CodingChallenge.md_
